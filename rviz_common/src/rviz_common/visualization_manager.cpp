@@ -675,6 +675,7 @@ void VisualizationManager::handleMouseEvent(const ViewportMouseEvent & vme)
       _vme.last_y = static_cast<int>(pixel_ratio * _vme.last_y);
     }
 #endif
+    // it control movement & focus
     flags = current_tool->processMouseEvent(_vme);
     vme.panel->setCursor(current_tool->getCursor());
     vme.panel->getRenderWindow()->setCursor(current_tool->getCursor());

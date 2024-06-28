@@ -79,6 +79,7 @@ RenderPanel::RenderPanel(QWidget * parent)
   layout_ = new QGridLayout(this);
   layout_->addWidget(render_window_container_widget_);
   this->setLayout(layout_);
+  // this->setFocusPolicy(Qt::NoFocus);
   render_window_->setOnRenderWindowMouseEventsCallback(
     std::bind(&RenderPanel::onRenderWindowMouseEvents, this, std::placeholders::_1));
   render_window_->setOnRenderWindowWheelEventsCallback(

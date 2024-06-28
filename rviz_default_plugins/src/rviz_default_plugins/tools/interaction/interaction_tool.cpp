@@ -156,14 +156,14 @@ int InteractionTool::processMouseEvent(rviz_common::ViewportMouseEvent & event)
     !dragging &&
     event.type != QEvent::MouseButtonRelease)
   {
-    updateFocus(event);
+    // updateFocus(event);
     flags = Render;
   }
 
   processInteraction(event, dragging);
 
   if (event.type == QEvent::MouseButtonRelease) {
-    updateFocus(event);
+    // updateFocus(event);
   }
 
   return flags;
