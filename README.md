@@ -1,4 +1,6 @@
-# RViz
+# Modified RViz
+
+**This rviz code is modified by tim-robotics to fix some bugs.**
 
 This branch is currently contained in the main `ros2.repos` file of ROS 2 and can be used for ROS 2.
 The latest release will be available with your ROS 2 download.
